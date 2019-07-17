@@ -1,0 +1,112 @@
+Name/Handle:
+CellPhoneDude
+
+
+Name of hardware:
+Pentest Dongle / Dropbox / Server
+
+Category you are entering:
+Hardcore
+
+Description/Summary:
+Pentest drop box with a cellular modem and static cellular addressing. Allowing a remote attacker persistence inside a target network with the ability to call back to the device directly without a c2. Currently the Dongle & Dropbox support kismet remote, they ssh tunnel back to the cellular server (a more powerful Intel NUC) which runs kismet displaying information from all the remotes.
+As a good guy maybe freelance IT, maybe MSP/MSSP. Leave a host at your clients office to use for troubleshooting, DFIR, Pentesting, and incident response on a remote network, connecting over cellular removing any points of failure getting to your equipment.
+
+General Intent:
+The idea was to make a cellular connected platform that did not rely on ssh tunnels for persistence. So that pen testers could roll their own tools on their own hardware that's already widely used and we'll documented. I designed it with pen testers in mind knowing there are applications for both. 
+
+What have you pwned so far:
+I've got video of me nmaping some school network via an open port I found on their campus, I'm not so much a hacker as I am a hardware and cellular nerd. I made this for other hackers too install tools and do stuff with.
+Construction methods:
+I sourced parts online, raspberry pi's, pi expansion boards (one for a host USB port on the pi zero, and various modem hat's. Designed and printed a custom case as well. The biggest hurdle was setting myself up so that I could resell T-Mobile IoT SIM's with the option to provide static addressing.
+What did you have to learn or teach yourself:
+Still adding on to it, learning node.js and python to build a web interface, add some auto network enumeration stuff.
+
+Usage:
+Dongle: 
+1. Plug into Target machine or power for wireless attacks / auditing
+2. SSH to your dongle pi@your static address
+3a. Install more tools / scripts and do bad things
+3b. If your plugged into a host on an active directory network 'sudo tcpdump usb0' see if you see stuff then see @mubix ntlm stealing trick
+3c. sudo ifconfig mon0 up && sudo airodump-ng -i mon0 
+4. Hack stuff ?????
+Dropbox:
+1. Plug into Target Ethernet
+2. SSH to your dongle pi@your static address
+3a. Install more tools / scripts and do bad things
+3b. If your plugged into a network that's running active directory network 'sudo tcpdump eth0' see if you see stuff then see @mubix ntlm stealing trick
+3c. sudo ifconfig mon0 up && sudo airodump-ng -i mon0 
+3d. Launch Metasploit and do stuff ?????
+3e. Enumerate and pcap the network or wireless traffic
+4. Hack stuff ?????
+Server*:
+1. Power it on
+2. Touch YubiKey to decrypt disk and boot
+3. ssh/vnc to ptuser@your static IP
+4a. Launch kismet from terminal and double click the desktop shortcut
+4b. Login to reverse shells and do bad things locally in targets network (I know what I said don't mean reverse shells aren't useful so I've put a lot of work to ensure that they are reliable)
+4c. Run metasploit from here
+*Getting this booted inside a target network is bad... "With great power comes great responsibility"
+Because it's also a VPN gateway in the even your not working alone ?????
+5. Hack stuff ?????
+Specs:
+Dongle:
+1 GHz, Single-Core Broadcom BCM2835
+512 MB RAM
+1x USB type A (USB OTG), 1x Micro USB OTG
+Unlocked 2G Cellular Modem w/ GPS
+802.11n
+Bluetooth 4.0
+Mini-HDMI
+32GB SD Card
+Raspbian
+NexMon Wi-Fi Driver w/ Monitor Mode
+Alfa 8812/8814 Drivers
+Kismet
+Dropbox:
+1.2 GHz, Quad-Core Broadcom BCM2837
+1 GB RAM
+4x USB 2.0
+10/100 Ethernet
+Unlocked 2G Cellular Modem w/ GPS
+2.4 GHz 802.11n
+Bluetooth 4.1
+HDMI
+32 GB SD Card
+Raspbian
+NexMon Wi-Fi Driver w/ Monitor Mode
+Alfa 8812/8814 Drivers
+Metasploit
+Kismet
+Server:
+Intel i3/i5/i7
+16/32 GB RAM
+NVMe 250GB/500GB/1TB
+10/100/1000 Ethernet
+4x USB 3.0
+Unlocked 4G Cellular Modem
+2.4 & 5 GHz 802.11ac w/ Monitor Mode
+Bluetooth 4.2 w/ Monitor Mode
+Full Disk Encryption
+(Optional) YubiKey's for password-less FDE
+(Optional) Alfa 8812 or 8814
+Ubuntu 18.04.2 LTS
+OpenVPN
+VMWare Workstation
+Kismet
+Metasploit
+Nessus
+Real VNC Server
+
+Links to related media:
+Our first customer wrote this blog post about our product: https://lockboxx.blogspot.com/2019/06/cellular-pentest-dropbox-review.html?m=1
+I did a talk at ShellCon earlier this year. https://youtu.be/tRytvE6WCyY
+And our site: https://xcapeinc.com/products.html
+
+Will you be at DC27: Yes
+
+Are you willing to get on stage and talk about the thing you made: Sure but only if I can drink ??
+
+Is there anything else you need or want to tell us: take into consideration that there is ongoing development.
+
+Do we need to keep your entry 'secret': nope

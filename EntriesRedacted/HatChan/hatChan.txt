@@ -1,0 +1,40 @@
+Name/Handle:
+JRWR
+
+Name of hardware:
+HatChan - The Hat Mounted Image Board
+
+Description/Summary:
+It is a Pith Helmet with a rPi, a Wifi Router running a Image Board setup as a private local network
+
+General Intent:
+Good Stuff, It has been used to between people at defcon to figure out what to do for lunch, Talk about the current talk they are in, and things like that.
+
+What have you pwned so far:
+There was the one time a group of people in the same talk used it to all get lunch together, total strangers before that.
+
+Construction methods:
+Most of my parts are off the self, Everything is held onto the pith helmet using Velcro, or foam tape (for the LED Strips) the two Wifi Antenna are held on using a set of bolts/washers and some binder clips. I had to "Add" some uFL connectors to the wifi router so I could put externals on it. 
+
+What did you have to learn or teach yourself:
+How to make a captive portal that doesn't crash peoples phones (thats a thing!)  File Uploads tend to crash people's browsers on phones while in captive portal mode, The Imageboard is modded to add Last known good GPS Coords to all posts and for time sync, and learning fun animations to do with my LED strip as well. Also to make the wifi survive Defcon, lots and lots of driver hacks to the Wifi drivers on both the Pi and the WIFI Router, Now it no longer crashes in the Wifi CTF Room and makes people angry when I go in there since I over power everything :P
+
+Usage:
+Connect to wifi access point: HatChan|HatMountedImageBoard and shit post to my hat!
+
+Specs:
+2 8dBi 2.4/5 Wifi antenna, 32GB of Diskspace, Running Alpine Linux, Wifi router running OpenWrt, 106 Neo Pixels all running off of two 26,000mAh Batteries, The project is now 4 years old now!
+
+Links to related media:
+https://twitter.com/jrwr/status/1140359109998460930
+
+https://twitter.com/textfiles/status/1109474873779388421
+https://pbs.twimg.com/media/D8_Rx31U4AA7Bn2.jpg
+Will you be at DC27:
+Yes
+Are you willing to get on stage and talk about the thing you made:
+Yes
+Is there anything else you need or want to tell us:
+No
+Do we need to keep your entry 'secret':
+No

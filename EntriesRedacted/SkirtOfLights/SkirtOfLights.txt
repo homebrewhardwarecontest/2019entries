@@ -1,0 +1,51 @@
+Name/Handle:
+n0ty3p
+
+
+Name of hardware:
+Skirt of Lights
+
+Category you are entering:
+Wearables
+
+Description/Summary:
+It's an LED embellished 1940's Tacky Mexican skirt hooked up to light sensors and accelerometer.
+
+General Intent:
+I am bon. I do good.
+
+What have you pwned so far:
+Blinkies are absolutely a sublime form of SE.
+
+Construction methods:
+Combination of off the shelf parts, hand-sewn stainless steel, stragically placed vinyl wire, and 1337 hand soldering.
+
+What did you have to learn or teach yourself:
+Circuit designed to support an animated effect. Soldering over 80 yr old cotton is a challenge >_<
+
+Usage:
+I wear. People ogle. (You guys really DID want a wearable category, right? If not, no worries ;-)
+
+Specs:
+Combination of 40+ Adafruit sequins and LilyPad LED's, 6 LilyPad twinkles, LilyPad light sesnsors and accelerometer, stranded vinyl coated wire, stainless steel thread, a bottle of clear nail polish.
+
+Links to related media:
+
+Video https://twitter.com/n0ty3p/status/1147249372809220096
+
+WIP
+image.png
+
+
+Will you be at DC27:
+Yes
+
+Are you willing to get on stage and talk about the thing you made:
+Yes
+
+Is there anything else you need or want to tell us:
+If this isn't what you're looking for no problema. Just let me know ;-)
+
+Do we need to keep your entry 'secret':
+IF you accept submission, PLEASE wait until it's more done done and I have better pix.
+bon

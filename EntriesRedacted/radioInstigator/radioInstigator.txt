@@ -1,0 +1,49 @@
+Name/Handle:
+CrankyLinuxUser 
+
+
+Twitter/Reddit:
+@CrankyLinuxUser , /u/CrankyLinuxUser 
+
+Name of hardware:
+RadioInstigator
+PICS: https://gitlab.com/crankylinuxuser/siginttablet/tree/master/CircleCityCon%202019/assets/radioinstigator
+
+Description/Summary:
+RadioInstigator is an ultra-cheap Signals Intelligence analytics and hacking device for wireless signals outside the standard 802.11abgn and BT spectrum. My goal is to provide a device that can identify, analyze, and hack anything with a radio transceiver.
+
+General Intent:
+The intent was to provide a base platform of a cheap civilian level SigInt device ($150-ish). One can defend their own assets, along with attacking others' assets. Intent is within the tool user :)
+
+What have you pwned so far:
+Wireless keyboards, mice, tracking vehicles via TPMS serial numbers, fully triggering alert mode on all paired Motorola FRS radios, various fuzzing techniques finding 'weird stuff'
+
+Construction methods:
+Nobody else outside of military has anything like this. I designed this using COTS hardware in a very modular fashion, using my own 3d design skills. I designed this to be printable on almost every printer available. 
+
+What did you have to learn or teach yourself:
+Of all the things, I had to learn documentation the most so that others could build this as well. Secondarily, I also had to understand radio signals fundamentals to the point of making them approachable to people wanting to start, but not sure of even the questions to ask. I 
+
+Usage:
+Turn on device using the chunky awesome SPST toggle. Wait until Raspbian/RPi boots up. Now, you have a Kali-like environment for SigInt. You have multiple directions. You can use GQRX to look at the spectrum. Or you can use Inspectrum to analyze signals. Or if you know of things to look at, you can load up URH and capture raw radio data and start actively analyzing/attacking.
+
+Specs:
+Cost: $150, not including printables
+Rx: 24MHz-1.7GHz
+Tx: 100KHz-1.5GHz
+CrazyRadio (covers 99% of non-BT keyboards/mice)
+802.11abgn wifi (separate from RPi builtin)
+Touchscreen 1280x720
+
+Links to related media:
+REPO: https://gitlab.com/crankylinuxuser/siginttablet
+YT of my talk: https://www.youtube.com/watch?v=Hyq6_IZ-2fE
+HaD writeup: https://hackaday.com/2019/06/05/mobile-sigint-hacking-on-a-civilians-budget/
+CircleCityCon: https://circlecitycon.com/talks/sigint_for_the_masses_building_and_using_a_signals_intelligence_platform_for_less_than_150/
+
+
+Will you be at DC27:
+YES!
+
+Are you willing to get on stage and talk about the thing you made:
+YES!
